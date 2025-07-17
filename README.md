@@ -1,11 +1,46 @@
-# Pneumatic-Fingers
-ABAQUS simulation of pneumatically controlled finger
+## ABAQUS simulation of a pneumatic finger
 
-Pneumatically controlled fingers are used in robotic arms operated remotely by surgeons. Such fingers are generally made up of a soft polymer such as PDMS (Polydimethylsiloxane). 
-PDMS has a low Young's modulus and a poissons ratio close to 0.5 (~0.48) which makes it almost incompressible. 
-Shows here is the setup of the model on ABAQUS. The left face of the finger has a fixed support (all DOFs set to 0), while a pressure of 0.18 MPa is applied to all the faces of the cavities.
+# Application
 
-<img width="1413" height="754" alt="Model_Anno" src="https://github.com/user-attachments/assets/81f4312d-b12c-405f-8a00-1863dd722398" />
+Pneumatically controlled fingers with internal cavities are used in robotic arms operated remotely by surgeons. Such a finger can be pneumatically controlled by the application of pressure in the cavities achieving precise bending deformations in the fingers enabling dexterity. Such fingers are generally made up of a soft polymer materials such as PDMS (Polydimethylsiloxane). 
+PDMS has a low Young's modulus and a poissons ratio close to 0.5 (~0.48) which makes it almost incompressible.
+
+# Simulation and boundary conditions
+
+Shown below is one half of a pneumatic finger with dimensions of 80 x 5 x 5.1 $mm^3$ with cavities of dimensions 3.2 x 2 x 4 $mm^3$. The model is setup in ABAQUS with fixed support on the left face of the finger and a pressure of 0.18 MPa applied to all the faces of the cavities. Since we are only simulating one half of the model, a symmetry boundary condition is applied on the XY plane ($U_z = UR_x = UR_y = 0$).
+
+<img width="1413" height="754" alt="Model_Anno" src="Model_Anno.png" />
+
+# Meshing
+
+The model is meshed with ~ 76000 linear hybrid incompatible mode (C3D8IH) elements. It is recommended to use hybrid elements in order to account for volumetric locking seen in incompressible elements. The mesh element also has incompatible modes to remove the artificial shear stresses that occur as a result of bending stresses. 
+
+<img width="1413" height="754" alt="Model_Anno" src="Mesh.png" />
+
+# Analysis
+
+The model is solved using a static structural analysis by specifying an isotropic material for the finger. Two cases are looked at: (i) linear and, (ii) large deformation approximation. In the case of nonlinear deformation, the strain includes second order terms that are neglected in the linear approximation. 
+
+# Results
+
+## Linear model
+
+The contour of deformation magnitude and Von-Mises stress are shown below
+
+<img width="1413" height="754" alt="Model_Anno" src="Linear_U.png" />
+
+<img width="1413" height="754" alt="Model_Anno" src="Linear_S.png" />
+
+## Non-Linear model
+
+The contour of deformation magnitude and Von-Mises stress are shown below
+
+<img width="1413" height="754" alt="Model_Anno" src="NL_U.png" />
+
+<img width="1413" height="754" alt="Model_Anno" src="NL_S.png" />
+
+# Discussion
+
+The deformations and stresses in the nonlinear analysis is higher than the linear case whihc is expected. The plot of deformation magnitude at a point on the right end of the finger shows this clearly.
 
 
-<img width="1409" height="754" alt="Mesh" src="https://github.com/user-attachments/assets/cc9c6536-795f-4bb2-b1d8-4d6466ac7162" />
