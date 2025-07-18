@@ -45,4 +45,16 @@ The deformations and stresses in the nonlinear analysis is higher than the linea
 
 <img width="1413" height="754" alt="Model_Anno" src="displacement_vs_pressure.png" />
 
+# Modal Analysis
+
+Modal analysis is performed with density specified as 965 $\frac{kg}{m^3}$. The first 4 modes occur at 5.75 Hz, 36.73 Hz, 98.33 Hz and 130.32 Hz. The first 3 modes are flexural modes and the 4th mode is a longitudinal mode.
+
+https://github.com/user-attachments/assets/f3ff75d1-61ba-46d8-84e3-f0536397b3c4
+
+https://github.com/user-attachments/assets/a0f7e448-c851-4a9e-8928-30a1acf6f09f
+
+https://github.com/user-attachments/assets/3967dda8-c533-43d6-9dcf-80fab5c34446
+
+https://github.com/user-attachments/assets/acea3fe9-8ddb-473f-9aa1-1dc00dee5aa2
+
 
