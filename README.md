@@ -65,7 +65,9 @@ Transient analysis was performed using a dynamic implicit analysis. Implicit ana
 
 An animation of the displacement field is show below
 
-https://github.com/user-attachments/assets/4fffd099-f304-4b57-85a5-eb12a311aa44
+
+https://github.com/user-attachments/assets/9ae895c5-8455-4190-abb8-92eeefd02298
+
 
 The displacement plot shows a sinusoidal variation of displacement with time. If we were to extend the simulation to around 15 seconds, we will obtain the static solution of the finger as seen in the section above.
 
