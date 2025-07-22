@@ -41,7 +41,7 @@ The contour of deformation magnitude and Von-Mises stress are shown below
 
 ## Discussion
 
-The deformations and stresses in the nonlinear analysis is higher than the linear case whihc is expected. The plot of deformation magnitude at a point on the right end of the finger shows this clearly.
+The deformations and stresses in the nonlinear analysis is higher than the linear case which is expected. The plot of deformation magnitude at a point on the right end of the finger shows this clearly.
 
 <img width="1413" height="754" alt="Model_Anno" src="displacement_vs_pressure.png" />
 
@@ -59,7 +59,7 @@ https://github.com/user-attachments/assets/acea3fe9-8ddb-473f-9aa1-1dc00dee5aa2
 
 # Transient Analysis
 
-Transient analysis was performed using a dynamic implicit analysis. Implicit analysis solves an equation involving the current state of a system as well as the state of the system at a later time. The pressure load was ramped to 0.18 MPa in 0.1 seconds and was kept at 0.18 MPa for a time period of 2 seconds. A plot of the y-displacement at the end of the finger as a funcion of time is shown below
+Transient analysis was performed using a dynamic implicit analysis. Implicit analysis solves an equation involving the current state of a system as well as the state of the system at a later time. The pressure load was ramped to 0.18 MPa in 0.1 seconds and was kept at 0.18 MPa for a time period of 2 seconds. A plot of the y-displacement at the end of the finger as a function of time is shown below
 
 <img width="1413" height="754" alt="Model_Anno" src="displacement_vs_time_dynamic.png" />
 
