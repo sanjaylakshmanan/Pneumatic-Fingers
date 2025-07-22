@@ -59,6 +59,10 @@ https://github.com/user-attachments/assets/acea3fe9-8ddb-473f-9aa1-1dc00dee5aa2
 
 # Transient Analysis
 
+Transient analysis was performed using a dynamic implicit analysis. Implicit analysis solves an equation involving the current state of a system as well as the state of the system at a later time. The pressure load was ramped to 0.18 MPa in 0.1 seconds and was kept at 0.18 MPa for a time period of 2 seconds. A plot of the y-displacement at the end of the finger as a funcion of time is shown below
 
+<img width="1413" height="754" alt="Model_Anno" src="displacement_vs_time_dynamic.png" />
 
+An animation of the displacement field is show below
 
+The displacement plot shows a sinusoidal variation of displacement with time. If we were to extend the simulation to around 15 seconds, we will obtain the static solution of the finger as seen in the section above.
